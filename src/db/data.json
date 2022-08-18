@@ -1,0 +1,97 @@
+{
+  "baskets" : {
+    "basketId" : 1,
+    "items" : [
+      {
+        "basketId" : 1,
+        "eProductId" : 1,
+        "eProductName" : "제주 유기농 우유",
+        "eProductQty" : 3,
+        "unitPrie" : 10000
+      },
+      {
+        "basketId" : 1,
+        "eProductId" : 2,
+        "eProductName" : "동물복지 달걀",
+        "eProductQty" : 2,
+        "unitPrie" : 10000
+      },
+      {
+        "basketId" : 1,
+        "eProductId" : 3,
+        "eProductName" : "재생섬유 가방",
+        "eProductQty" : 1,
+        "unitPrie" : 50000
+      }
+    ],
+    "totalPrice" : 70000
+
+  },
+
+  "ecoOrder" : {
+    "ecoOrderId" : 1,
+    "items" : [
+      {
+        "ecoOrderId" : 1,
+        "eProductId" : 1,
+        "eProductName" : "제주 유기농 우유",
+        "eProductQty" : 3,
+        "unitPrie" : 10000
+      },
+      {
+        "ecoOrderId" : 1,
+        "eProductId" : 2,
+        "eProductName" : "동물복지 달걀",
+        "eProductQty" : 2,
+        "unitPrie" : 10000
+      },
+      {
+        "ecoOrderId" : 1,
+        "eProductId" : 3,
+        "eProductName" : "재생섬유 가방",
+        "eProductQty" : 1,
+        "unitPrie" : 50000
+      }
+    ],
+    "totalPrice" : 70000,
+    "orderState" : "ORDER"
+  },
+
+  "ecoOrders" : [
+    {
+      "ecoOrderId" : 1,
+      "totalPrice" : 70000,
+      "orderState" : "결제완료",
+      "orderMethod" : "Eco Point 결제",
+      "orderDate" : "2022-06-20",
+      "orderName" : "재생섬유 가방 외 2"
+    },
+    {
+      "ecoOrderId" : 2,
+      "totalPrice" : 50000,
+      "orderState" : "주문취소",
+      "orderMethod" : "카드결제",
+      "orderDate" : "2022-06-10",
+      "orderName" : "동물복지 달걀 외 1"
+    },
+    {
+      "ecoOrderId" : 3,
+      "totalPrice" : 100000,
+      "orderState" : "결제대기",
+      "orderMethod" : "현금결제",
+      "orderDate" : "2022-07-10",
+      "orderName" : "자연이랑 복숭아 외 1"
+    }
+  ],
+
+  "payment" : {
+    "paymentId" : 1,
+    "ecoOrderId" : 1,
+    "paymentKind" : "ECOPOINT",
+    "paymentMethod" : "LUMPSUM",
+    "paymentStatus" : "PAYMENT",
+    "amout" : 70000,
+    "date" : "2022-06-20"
+  }
+
+}
